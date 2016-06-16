@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.irregularverb.example.carthy.irregularverb.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:background="@color/bg">
+
+    <Button
+        android:id="@+id/begin"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:onClick="begin"
+        android:background="@drawable/white_button"
+        android:textColor="@color/WhiteCraie"
+        android:text="@string/Begin"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/Exit"
+        android:onClick="exit"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/begin"
+        android:background="@drawable/red_button"
+        android:textColor="@color/WhiteCraie"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+</RelativeLayout>
